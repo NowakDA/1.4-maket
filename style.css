@@ -1,0 +1,137 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-size: 100%;
+    height: 100%;
+    font-family: "TT Lakes", sans-serif;
+    color: #1B1C21;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+@keyframes opacity-scale {
+    from {opacity: 100%;
+        transform: scale(1);}
+    to {opacity:90%;
+        transform: scale(1.2);}
+}
+.btn:hover{
+    animation-name: opacity-scale;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+}
+
+.burger-menu {
+    width: 320px;
+    min-height: 100%;
+    box-shadow: 16px 0 52px -10px #0E185033;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.burger-menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px 0 24px;
+}
+
+.burger-menu__left-header {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.burger-menu__main {
+    flex-grow: 1;
+    padding-top: 30px;
+    padding-left: 24px;
+}
+
+
+
+.burger-menu__main li {
+    padding: 16px 0;
+    list-style: none;
+
+}
+
+.burger-menu__main .nav-menu {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.burger-menu__navigation .active {
+    color:  #7E7E82;
+}
+
+.burger-menu__navigation .active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 116px;
+    width: 4px;
+    height: 32px;
+    background-color: #41f6d7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+.burger-menu__contacts {
+    padding: 32px 24px;
+}
+
+.burger-menu__contact-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+
+.burger-menu__mail{
+    font-weight: 600;
+}
+
+.burger-menu__telephone {
+    font-size: 24px;
+    font-family: 'TT Lakes', Arial, sans-serif;
+    font-weight: 800;
+    color: #1B1C21;
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+
+.burger-menu__lang-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.burger-menu__lang a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1B1C21;
+    padding-right: 7px;
+}
+
+.burger-menu__lang .active {
+    color: #7E7E82;
+}
+
+.burger-menu__lang a:hover {
+    color: #7E7E82;
+}
