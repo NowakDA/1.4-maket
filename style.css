@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.list-reset {
+  list-style: none;
+}
+
 html,
 body {
   font-size: 100%;
@@ -57,7 +61,7 @@ a:hover {
   padding: 18px 24px 0 24px;
 }
 
-.search {
+.burger-header__search {
   margin-left: auto;
 }
 
@@ -67,14 +71,11 @@ a:hover {
   padding-left: 24px;
 }
 
-.burger-navigation li {
-  padding: 16px 0;
-  list-style: none;
-}
 
 .burger-navigation__item {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
+  padding: 16px 0;
 }
 
 .burger-navigation .active {
@@ -104,13 +105,18 @@ a:hover {
   padding-bottom: 16px;
 }
 
+.contact-info{
+  display: flex;
+  flex-direction: column;
+}
+
 .mail {
   font-weight: 600;
 }
 
 .phone {
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 700;
   padding-top: 12px;
   padding-bottom: 40px;
 }
@@ -118,10 +124,9 @@ a:hover {
 .lang-list {
   display: flex;
   flex-direction: row;
-  list-style: none;
 }
 
-.lang-list a {
+.lang-list__item {
   font-size: 16px;
   font-weight: 600;
   padding-right: 7px;

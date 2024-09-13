@@ -12,40 +12,44 @@
 
 <body>
 
-    <div class="burger-menu">
-        <div class="burger-header">
-            <button class="btn burger-close"><img src="img/burger-close.svg" alt=""></button>
-            <button class="btn group"><img src="img/Group.svg" alt=""></button>
-            <button button class="btn search"><img src="img/search.svg" alt=""></button>
-        </div>
-        <ul class="burger-navigation">
-            <li><a class="active burger-navigation__item" href="#repair">Ремонт техники</a></li>
-            <li><a class="burger-navigation__item" href="#service">Услуги и сервисы </a></li>
-            <li><a class="burger-navigation__item" href="#client">Корпоративным клиентам</a></li>
-            <li><a class="burger-navigation__item" href="#seller">Продавцам техники</a></li>
-            <li><a class="burger-navigation__item" href="#partners">Партнерам</a></li>
-            <li><a class="burger-navigation__item" href="#manufacturer">Производителям</a></li>
-            <li><a class="burger-navigation__item" href="#our-servises">Наши сервисные центры</a></li>
-            <li><a class="burger-navigation__item" href="#contacts">Контакты</a></li>
-        </ul>
+    <aside class="burger-menu">
+        <header class="burger-header">
+            <button class="btn burger-header__close"><img src="img/burger-close.svg" alt=""></button>
+            <a class="logo" href="#logo"><img src="img/Group.svg" alt=""></a>
+            <button button class="btn burger-header__search"><img src="img/search.svg" alt=""></button>
+        </header>
+        <nav class="burger-navigation">
+            <ul class="burger-navigation__items list-reset">
+                <li class="burger-navigation__item"><a class="active" href="#repair">Ремонт техники</a></li>
+                <li class="burger-navigation__item"><a href="#service">Услуги и сервисы </a></li>
+                <li class="burger-navigation__item"><a href="#client">Корпоративным клиентам</a></li>
+                <li class="burger-navigation__item"><a href="#seller">Продавцам техники</a></li>
+                <li class="burger-navigation__item"><a href="#partners">Партнерам</a></li>
+                <li class="burger-navigation__item"><a href="#manufacturer">Производителям</a></li>
+                <li class="burger-navigation__item"><a href="#our-servises">Наши сервисные центры</a></li>
+                <li class="burger-navigation__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
         <div class="burger-contacts">
-            <div class="contact-icons">
-                <button class="contact-icons_btn btn"><img src="img/call.svg" alt="call"></button>
-                <button class="contact-icons_btn btn"><img src="img/chat.svg" alt="chat"></button>
-                <button class="contact-icons_btn btn"><img src="img/profile.svg" alt="profile"> </button>
-            </div>
-            <div class="mail"><a href="mailto:mail@cps.com">mail@cps.com</a></div>
-            <div class="phone"><a href="tel:88008908900">8 800 890 8900</a></div>
+            <ul class="contact-icons list-reset">
+                <li><button class="contact-icons__btn btn"><img src="img/call.svg" alt="call"></button></li>
+                <li><button class="contact-icons__btn btn"><img src="img/chat.svg" alt="chat"></button></li>
+                <li><button class="contact-icons__btn btn"><img src="img/profile.svg" alt="profile"> </button></li>
+            </ul>
+            <address class="contact-info">
+                <a class="mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                <a class="phone" href="tel:88008908900">8 800 890 8900</a>
+            </address>
 
-            <ul class="lang-list">
-                <li><a class="active" href="#RU">RU</a></li>
-                <li><a href="#EN">EN</a></li>
-                <li><a href="#CH">CH</a></li>
+            <ul class="lang-list list-reset">
+                <li class="lang-list__item"><a class="active" href="#RU">RU</a></li>
+                <li class="lang-list__item"><a href="#EN">EN</a></li>
+                <li class="lang-list__item"><a href="#CH">CH</a></li>
             </ul>
 
         </div>
-    </div>
-    </div>
+    </aside>
+    
 
 </body>
 
